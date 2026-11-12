@@ -1,0 +1,403 @@
+
+:root {
+  --crema: #f8f4e8;
+  --crema-oscuro: #efe8d2;
+  --verde: #2f5d46;
+  --verde-oscuro: #234735;
+  --rojo: #b23a30;
+  --dorado: #e0b252;
+  --texto: #2b2b2b;
+  --texto-suave: #6b6b6b;
+  --borde: #e6dfc8;
+}
+
+body {
+  background-color: var(--crema);
+  color: var(--texto);
+}
+
+
+.spinner-global {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: rgba(248, 244, 232, 0.75);
+  font-weight: 600;
+  color: var(--verde);
+}
+
+
+.auth-pagina {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 24rem;
+  border: 1px solid var(--borde);
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(47, 93, 70, 0.08);
+}
+
+.auth-card-ancha {
+  max-width: 28rem;
+}
+
+.auth-titulo {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--verde);
+  margin-bottom: 0.25rem;
+}
+
+.auth-subtitulo {
+  text-align: center;
+  color: var(--texto-suave);
+  margin-bottom: 1.25rem;
+}
+
+.auth-enlace {
+  text-align: center;
+  margin: 1rem 0 0;
+  color: var(--texto-suave);
+}
+
+.auth-enlace a {
+  color: var(--rojo);
+  font-weight: 600;
+}
+
+.btn-success {
+  --bs-btn-bg: var(--verde);
+  --bs-btn-border-color: var(--verde);
+  --bs-btn-hover-bg: var(--verde-oscuro);
+  --bs-btn-hover-border-color: var(--verde-oscuro);
+  --bs-btn-active-bg: var(--verde-oscuro);
+  --bs-btn-active-border-color: var(--verde-oscuro);
+  --bs-btn-disabled-bg: #9db3a6;
+  --bs-btn-disabled-border-color: #9db3a6;
+}
+
+
+.menu-app {
+  background: #fffdf6;
+  border-bottom: 1px solid var(--borde);
+  padding: 0.75rem 0;
+}
+
+.menu-app-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.menu-app-titulo {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--verde);
+}
+
+.menu-app-lema {
+  font-size: 0.8rem;
+  color: var(--texto-suave);
+}
+
+.menu-app-acciones {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.menu-app-usuario {
+  font-weight: 600;
+}
+
+.etiqueta {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.etiqueta-plus {
+  background: var(--verde);
+}
+
+.etiqueta-premium {
+  background: var(--dorado);
+  color: var(--texto);
+}
+
+.etiqueta-admin {
+  background: var(--texto);
+}
+
+.boton-logout {
+  background: var(--rojo);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+}
+
+.boton-logout:hover {
+  background: #8f2d25;
+}
+
+
+.contenido {
+  padding: 2rem 0 3rem;
+}
+
+.saludo {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--texto);
+}
+
+.saludo-detalle {
+  text-align: center;
+  color: var(--texto-suave);
+}
+
+
+.texto-suave {
+  color: var(--texto-suave);
+}
+
+.contenedor-estrecho {
+  max-width: 760px;
+}
+
+.menu-app-enlaces {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-app-enlaces a {
+  color: var(--texto);
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.menu-app-enlaces a.active {
+  color: var(--verde);
+  border-bottom-color: var(--verde);
+}
+
+.seccion-titulo {
+  font-size: 1.5rem;
+  color: var(--verde);
+  margin: 1.5rem 0 1rem;
+}
+
+.seccion-subtitulo {
+  font-size: 1.15rem;
+  color: var(--verde);
+  margin-bottom: 1rem;
+}
+
+.tarjeta-formulario {
+  background: #fffdf6;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 0.5rem;
+}
+
+form.tarjeta-formulario {
+  padding: 1.25rem;
+}
+
+.filtros-viajes {
+  background: #fffdf6;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filtros-viajes label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.aviso-limite {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+}
+
+.tarjeta-viaje {
+  height: 100%;
+  background: #fffdf6;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.viaje-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.viaje-titulo {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--texto);
+}
+
+.viaje-destino {
+  color: var(--rojo);
+  font-weight: 600;
+}
+
+.etiqueta-categoria {
+  background: var(--dorado) !important;
+  color: var(--texto);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.viaje-fechas {
+  margin-top: 0.5rem;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+}
+
+.viaje-estrellas {
+  color: var(--dorado);
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+}
+
+.viaje-notas {
+  margin-top: 0.5rem;
+  white-space: pre-line;
+}
+
+.viaje-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* ===== Categorías ===== */
+.lista-tipos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fila-tipo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #fffdf6;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.fila-tipo-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+
+.informe-uso {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  background: #fffdf6;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+}
+
+.informe-uso .seccion-subtitulo {
+  margin-bottom: 0.5rem;
+}
+
+.informe-cantidad {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.planes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta-plan {
+  background: #fffdf6;
+  border: 2px solid var(--borde);
+  border-radius: 14px;
+}
+
+.tarjeta-plan.plan-actual {
+  border-color: var(--verde);
+}
+
+
+.grafica-viajes {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  background: #fffdf6;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+}
+
+.panel-viaje {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--borde);
+}
+
+.itinerario-texto {
+  white-space: pre-line;
+  margin-bottom: 0.75rem;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+
+.viaje-imagen {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+}
+
+.vista-previa-imagen {
+  max-width: 100%;
+  max-height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.entrada-archivo {
+  max-width: 320px;
+}
